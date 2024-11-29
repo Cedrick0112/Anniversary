@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6e9, #ffb3c6, #ffccff); /* Soft pastel gradient */
+    background-size: 400% 400%; /* For animation effect */
+    color: #333;
+    text-align: center;
+    animation: gradientBG 10s ease infinite; /* Smooth animation */
+}
+
+
+/* Login Page Styles */
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffe6f2;
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 2px solid #e60073;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login-button {
+    background: #e60073;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#login-button:hover {
+    background: #cc005c;
+}
+
+#login-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Main Content Styles */
+header {
+    background: #ffcccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #e60073;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #e60073;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px;
+    border: 2px solid #e60073;
+    border-radius: 10px;
+}
+
+.together,
+.surprise {
+    background: #ffe6f2;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffcccc;
+    color: #e60073;
+}
+
+#play-audio-button {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#play-audio-button:hover {
+    background-color: #cc005c;
+}
+.love-message button {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.love-message button:hover {
+    background-color: #cc005c;
+}
+
+#anniversary-message {
+    background: #ffe6f2;
+    padding: 20px;
+    border: 2px solid #e60073;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+.gallery {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #ffe6f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery h2 {
+    color: #e60073;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
